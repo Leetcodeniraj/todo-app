@@ -1,26 +1,40 @@
-.todo_app_section{
-    background-color:gray ;
+.todo_app_section {
+    width: 100%;
     height: 100vh;
-    display:flex;
-    align-items:center;
+    background-color: gray;
+    display: flex;
     justify-content: center;
-    
-
-    & .todo_app_container{
-        height: 400px;
-        width: 50%;
-        min-width: 500px;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 10px;
-
-
-        & .task_list{
-            width: 100%;
-            height: 50%;
-
-        }
+    align-items: center;
+  
+    & .todo_app_container {
+      width: 500px;
+      height: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      overflow: auto;
+  
+      .task_list {
+        width: 100%;
+        height: auto;
+        min-height: 50%;
+        padding: 20px 0px;
+      }
+      .new_task_list {
+        border-bottom: 2px solid #aaaaaa;
+      }
+      .completed_task_list {
+      }
     }
-}
-
-
+  }
+  
+  // scroll bar ui start
+  ::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+  
+  // scroll bar ui end
+  
